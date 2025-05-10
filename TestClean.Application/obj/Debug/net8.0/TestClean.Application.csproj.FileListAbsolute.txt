@@ -1,0 +1,12 @@
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Application/bin/Debug/net8.0/TestClean.Application.deps.json
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Application/bin/Debug/net8.0/TestClean.Application.dll
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Application/bin/Debug/net8.0/TestClean.Application.pdb
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Application/obj/Debug/net8.0/TestClean.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Application/obj/Debug/net8.0/TestClean.Application.AssemblyInfoInputs.cache
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Application/obj/Debug/net8.0/TestClean.Application.AssemblyInfo.cs
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Application/obj/Debug/net8.0/TestClean.Application.csproj.CoreCompileInputs.cache
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Application/obj/Debug/net8.0/TestClean.Application.dll
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Application/obj/Debug/net8.0/refint/TestClean.Application.dll
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Application/obj/Debug/net8.0/TestClean.Application.pdb
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Application/obj/Debug/net8.0/ref/TestClean.Application.dll
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Application/obj/Debug/net8.0/TestClean.Application.csproj.AssemblyReference.cache

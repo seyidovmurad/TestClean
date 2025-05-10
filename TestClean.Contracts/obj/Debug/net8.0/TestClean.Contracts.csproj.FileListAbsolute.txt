@@ -1,0 +1,11 @@
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Contracts/bin/Debug/net8.0/TestClean.Contracts.deps.json
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Contracts/bin/Debug/net8.0/TestClean.Contracts.dll
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Contracts/bin/Debug/net8.0/TestClean.Contracts.pdb
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Contracts/obj/Debug/net8.0/TestClean.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Contracts/obj/Debug/net8.0/TestClean.Contracts.AssemblyInfoInputs.cache
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Contracts/obj/Debug/net8.0/TestClean.Contracts.AssemblyInfo.cs
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Contracts/obj/Debug/net8.0/TestClean.Contracts.csproj.CoreCompileInputs.cache
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Contracts/obj/Debug/net8.0/TestClean.Contracts.dll
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Contracts/obj/Debug/net8.0/refint/TestClean.Contracts.dll
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Contracts/obj/Debug/net8.0/TestClean.Contracts.pdb
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Contracts/obj/Debug/net8.0/ref/TestClean.Contracts.dll

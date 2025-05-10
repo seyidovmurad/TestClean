@@ -1,0 +1,15 @@
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Infrastructure/bin/Debug/net8.0/TestClean.Infrastructure.deps.json
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Infrastructure/bin/Debug/net8.0/TestClean.Infrastructure.dll
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Infrastructure/bin/Debug/net8.0/TestClean.Infrastructure.pdb
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Infrastructure/obj/Debug/net8.0/TestClean.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Infrastructure/obj/Debug/net8.0/TestClean.Infrastructure.AssemblyInfoInputs.cache
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Infrastructure/obj/Debug/net8.0/TestClean.Infrastructure.AssemblyInfo.cs
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Infrastructure/obj/Debug/net8.0/TestClean.Infrastructure.csproj.CoreCompileInputs.cache
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Infrastructure/obj/Debug/net8.0/TestClean.Infrastructure.dll
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Infrastructure/obj/Debug/net8.0/refint/TestClean.Infrastructure.dll
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Infrastructure/obj/Debug/net8.0/TestClean.Infrastructure.pdb
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Infrastructure/obj/Debug/net8.0/ref/TestClean.Infrastructure.dll
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Infrastructure/bin/Debug/net8.0/TestClean.Application.dll
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Infrastructure/bin/Debug/net8.0/TestClean.Application.pdb
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Infrastructure/obj/Debug/net8.0/TestClean.Infrastructure.csproj.AssemblyReference.cache
+/home/murad/Desktop/projects/personal/clean-arch/TestClean/TestClean.Infrastructure/obj/Debug/net8.0/TestClean.Infrastructure.csproj.CopyComplete
