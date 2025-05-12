@@ -1,3 +1,5 @@
+using System;
+
 namespace TestClean.Contracts.Authentication;
 
 public record AuthenticationResponse(

@@ -1,6 +1,8 @@
+using TestClean.Domain.Entities;
+
 namespace TestClean.Application.Common.Interfaces.Authentication;
 
 public interface IJwtTokenGenerator
 {
-    string GenerateToken(Guid userId, string fistName, string lastName);
+    string GenerateToken(User user);
 }
