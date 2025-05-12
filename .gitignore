@@ -9,8 +9,6 @@
 *.sln.docstates
 
 # User-specific folders
-.vscode/
-.vs/
 _ReSharper.Caches/
 
 # Mono auto generated files
