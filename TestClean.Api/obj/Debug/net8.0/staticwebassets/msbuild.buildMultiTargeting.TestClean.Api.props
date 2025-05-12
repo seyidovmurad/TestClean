@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../build/TestClean.Api.props" />
-</Project>
