@@ -1,51 +1,24 @@
-
 using TestClean.Application.Common.Interfaces.Authentication;
 using TestClean.Application.Presistence;
 using TestClean.Domain.Entities;
 
-namespace TestClean.Application.Services.Authentication;
-public interface IAuthenticationService
+namespace TestClean.Application.Services.Authentication.Commands;
+public interface IAuthenticationCommandService
 {
-    AuthenticationResult Login(string email, string password);
     AuthenticationResult Register(string name, string surname, string email, string password);
 
 }
 
 
-public class AuthenticationService : IAuthenticationService
+public class AuthenticationCommandService : IAuthenticationCommandService
 {
     private readonly IJwtTokenGenerator _jwtTokenGenerator;
     private readonly IUserRepository _userRepository;
 
-    public AuthenticationService(IJwtTokenGenerator jwtTokenGenerator, IUserRepository userRepository)
+    public AuthenticationCommandService(IJwtTokenGenerator jwtTokenGenerator, IUserRepository userRepository)
     {
         _jwtTokenGenerator = jwtTokenGenerator;
         _userRepository = userRepository;
-    }
-
-    public AuthenticationResult Login(string email, string password)
-    {
-        // Check if the user exists
-        var user = _userRepository.GetUserByEmail(email);
-
-        if (user == null)
-        {
-            throw new Exception("User not found");
-        }
-
-        // Check if the password is correct
-        if (user.Password != password)
-        {
-            throw new Exception("Invalid password");
-        }
-
-        // Create JWT token
-        var token = _jwtTokenGenerator.GenerateToken(user);
-
-        return new AuthenticationResult(
-            user,
-            token
-        );
     }
 
     public AuthenticationResult Register(string name, string surname, string email, string password)
@@ -79,8 +52,3 @@ public class AuthenticationService : IAuthenticationService
     }
 }
 
-
-public record AuthenticationResult(
-    User User,
-    string Token
-);
