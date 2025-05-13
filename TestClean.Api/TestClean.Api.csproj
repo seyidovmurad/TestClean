@@ -10,6 +10,7 @@
     <ProjectReference Include="..\TestClean.Application\TestClean.Application.csproj" />
     <ProjectReference Include="..\TestClean.Contracts\TestClean.Contracts.csproj" />
     <ProjectReference Include="..\TestClean.Infrastructure\TestClean.Infrastructure.csproj" />
+    <ProjectReference Include="..\TestClean.Mediator\TestClean.Mediator.csproj" />
   </ItemGroup>
 
 </Project>

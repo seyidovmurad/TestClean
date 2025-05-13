@@ -1,5 +1,8 @@
+using System.Threading.Tasks;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using TestClean.Application.Services.Authentication;
+using Namespace.Application.Authentication.Queries.Login;
+using TestClean.Application.Authentication.Commands.Register;
 using TestClean.Contracts.Authentication;
 
 namespace TestClean.Api.Controllers;
@@ -8,48 +11,39 @@ namespace TestClean.Api.Controllers;
 [Route("auth")]
 public class AuthenticationController : ControllerBase
 {
-    private readonly IAuthenticationService _authenticationService;
-    public AuthenticationController(IAuthenticationService authenticationService)
+    private readonly IMediator _mediator;
+    private readonly TestClean.Mediator.Interfaces.ISender _sender;
+
+    public AuthenticationController(IMediator mediator, Mediator.Interfaces.ISender sender)
     {
-        _authenticationService = authenticationService;
+        _mediator = mediator;
+        _sender = sender;
     }
 
     [HttpPost("register")]
-    public IActionResult Register(RegisterRequest request)
+    public async Task<IActionResult> Register(RegisterRequest request)
     {
-        var authResult = _authenticationService.Register(
+        var command = new RegisterCommand(
             request.FirstName,
             request.LastName,
             request.Email,
             request.Password
         );
 
-        var response = new AuthenticationResponse(
-            authResult.User.Id,
-            authResult.User.FirstName,
-            authResult.User.LastName,
-            authResult.User.Email,
-            authResult.Token
-        );
+        var response = await _sender.Send(command);
 
         return Ok(response);
     }
 
     [HttpPost("login")]
-    public IActionResult Login(LoginRequest request)
+    public async Task<IActionResult> Login(LoginRequest request)
     {
-        var authResult = _authenticationService.Login(
+        var query = new LoginQuery(
             request.Email,
             request.Password
         );
 
-        var response = new AuthenticationResponse(
-            authResult.User.Id,
-            authResult.User.FirstName,
-            authResult.User.LastName,
-            authResult.User.Email,
-            authResult.Token
-        );
+        var response = await _mediator.Send(query);
 
         return Ok(response);
     }

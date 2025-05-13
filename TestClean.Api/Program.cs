@@ -13,6 +13,7 @@ builder.Services.AddControllers(opt => opt.Filters.Add<ErrorHandlingFilterAttrib
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 
+
 var app = builder.Build();
 
 
