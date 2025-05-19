@@ -1,7 +1,6 @@
 
-
-using MediatR;
 using TestClean.Application.Services.Authentication;
+using TestClean.Mediator.Interfaces;
 
 namespace Namespace.Application.Authentication.Queries.Login;
 

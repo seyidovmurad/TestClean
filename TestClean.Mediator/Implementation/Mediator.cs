@@ -14,15 +14,17 @@ public static class Mediator
         services.AddScoped<ISender, Sender>();
         
         var handlerInterfaceType = typeof(IRequestHandler<,>);
+        var pipelineBehaviorInterfaceType = typeof(IPipelineBehavior<,>);
 
         var handlerTypes = assembly.GetTypes()
-            .Where(t => !t.IsAbstract && !t.IsInterface)
+            .Where(t => !t.IsAbstract && !t.IsInterface && !t.IsGenericTypeDefinition )
             .SelectMany(t => t.GetInterfaces()
-                    .Where(i => i.IsGenericType && i.GetGenericTypeDefinition() == handlerInterfaceType)
+                    .Where(i => i.IsGenericType && (i.GetGenericTypeDefinition() == handlerInterfaceType || i.GetGenericTypeDefinition() == pipelineBehaviorInterfaceType))
                     .Select(i => new { Interfaces = i, Implementation = t}));
             
         foreach (var handler in handlerTypes)
         {
+
             services.AddScoped(handler.Interfaces, handler.Implementation);
         }
 

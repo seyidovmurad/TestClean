@@ -1,8 +1,9 @@
-using MediatR;
+
 using Namespace.Application.Authentication.Queries.Login;
 using TestClean.Application.Common.Interfaces.Authentication;
 using TestClean.Application.Presistence;
 using TestClean.Application.Services.Authentication;
+using TestClean.Mediator.Interfaces;
 
 namespace TestClean.Application.Authentication.Queries.Login;
 

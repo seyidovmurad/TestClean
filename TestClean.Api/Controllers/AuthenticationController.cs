@@ -1,5 +1,4 @@
 using System.Threading.Tasks;
-using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Namespace.Application.Authentication.Queries.Login;
 using TestClean.Application.Authentication.Commands.Register;
@@ -11,12 +10,10 @@ namespace TestClean.Api.Controllers;
 [Route("auth")]
 public class AuthenticationController : ControllerBase
 {
-    private readonly IMediator _mediator;
     private readonly TestClean.Mediator.Interfaces.ISender _sender;
 
-    public AuthenticationController(IMediator mediator, Mediator.Interfaces.ISender sender)
+    public AuthenticationController(Mediator.Interfaces.ISender sender)
     {
-        _mediator = mediator;
         _sender = sender;
     }
 
@@ -43,7 +40,7 @@ public class AuthenticationController : ControllerBase
             request.Password
         );
 
-        var response = await _mediator.Send(query);
+        var response = await _sender.Send(query);
 
         return Ok(response);
     }
