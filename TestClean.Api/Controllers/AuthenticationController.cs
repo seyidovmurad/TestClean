@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using MapsterMapper;
 using Microsoft.AspNetCore.Mvc;
 using Namespace.Application.Authentication.Queries.Login;
 using TestClean.Application.Authentication.Commands.Register;
@@ -11,37 +12,30 @@ namespace TestClean.Api.Controllers;
 public class AuthenticationController : ControllerBase
 {
     private readonly TestClean.Mediator.Interfaces.ISender _sender;
+    private readonly IMapper _mapper;
 
-    public AuthenticationController(Mediator.Interfaces.ISender sender)
+    public AuthenticationController(Mediator.Interfaces.ISender sender, IMapper mapper)
     {
         _sender = sender;
+        _mapper = mapper;
     }
 
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterRequest request)
     {
-        var command = new RegisterCommand(
-            request.FirstName,
-            request.LastName,
-            request.Email,
-            request.Password
-        );
-
+        var command = _mapper.Map<RegisterCommand>(request);
         var response = await _sender.Send(command);
 
-        return Ok(response);
+        return Ok(_mapper.Map<AuthenticationResponse>(response));
     }
 
     [HttpPost("login")]
     public async Task<IActionResult> Login(LoginRequest request)
     {
-        var query = new LoginQuery(
-            request.Email,
-            request.Password
-        );
+        var query = _mapper.Map<LoginQuery>(request);
 
         var response = await _sender.Send(query);
 
-        return Ok(response);
+        return Ok(_mapper.Map<AuthenticationResponse>(response));
     }
 }
